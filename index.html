@@ -20,9 +20,9 @@
     }
 
     .sidebar {
-      width: 300px;
+      width: 40%;
       background-color: #ffffff;
-      padding: 40px 20px;
+      padding: 50px 30px;
       border-right: 1px solid #e0e0e0;
       height: 100vh;
       position: fixed;
@@ -31,45 +31,46 @@
     }
 
     .sidebar img {
-      width: 140px;
-      height: 140px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       object-fit: cover;
+      object-position: top;
       border: 3px solid #007bff;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     .sidebar h1 {
-      font-size: 24px;
-      margin: 20px 0 8px;
+      font-size: 26px;
+      margin: 20px 0 10px;
       color: #007bff;
     }
 
     .sidebar p {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 20px;
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 25px;
       line-height: 1.6;
     }
 
     .sidebar a {
       display: inline-block;
-      margin: 8px 6px;
+      margin: 8px 10px;
       color: #007bff;
       text-decoration: none;
       font-weight: 500;
-      font-size: 14px;
+      font-size: 15px;
     }
 
     .main {
-      margin-left: 300px;
-      padding: 50px 40px;
+      margin-left: 40%;
+      padding: 60px 40px;
       flex: 1;
       overflow-y: auto;
     }
 
     .main h2 {
-      font-size: 20px;
+      font-size: 22px;
       color: #333;
       margin-bottom: 30px;
       font-weight: 600;
@@ -110,10 +111,9 @@
 
     @media (max-width: 768px) {
       .sidebar {
-        position: relative;
         width: 100%;
         height: auto;
-        border-right: none;
+        position: relative;
         border-bottom: 1px solid #eee;
       }
 
