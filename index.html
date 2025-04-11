@@ -21,7 +21,6 @@
 
     .sidebar {
       width: 40%;
-      background-color: #ffffff;
       background-image: url("sidebar_background.jpg");
       background-size: cover;
       background-position: center;
@@ -33,7 +32,6 @@
       text-align: center;
       color: white;
     }
-
 
     .sidebar img {
       width: 100%;
@@ -56,7 +54,7 @@
 
     .sidebar p {
       font-size: 15px;
-      color: #555;
+      color: white;
       margin-bottom: 25px;
       line-height: 1.6;
     }
@@ -64,19 +62,18 @@
     .sidebar a {
       display: inline-block;
       margin: 8px 10px;
-      color: #007bff;
+      color: #00aaff;
       text-decoration: none;
       font-weight: 500;
       font-size: 15px;
     }
 
-     .main {
+    .main {
       margin-left: 40%;
-      padding: 60px 60px;
+      padding: 60px;
       flex: 1;
       overflow-y: auto;
     }
-    
 
     .main h2 {
       font-size: 22px;
@@ -111,13 +108,6 @@
       line-height: 1.5;
     }
 
-    footer {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 13px;
-      color: #aaa;
-    }
-
     .badge {
       display: inline-flex;
       align-items: center;
@@ -130,16 +120,28 @@
       margin-top: 12px;
       transition: background 0.3s;
     }
-    .badge:hover {
-  background-color: #333;
+
+    .badge img {
+      margin-right: 8px;
     }
 
+    .badge:hover {
+      background-color: #333;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 13px;
+      color: #aaa;
+    }
 
     @media (max-width: 768px) {
       .sidebar {
         width: 100%;
         height: auto;
         position: relative;
+        border-right: none;
         border-bottom: 1px solid #eee;
       }
 
@@ -157,33 +159,35 @@
     <h1>Ashish</h1>
     <p>Data Science enthusiast with a strong foundation in statistics, NLP, and AI. Passionate about building ethical and intelligent systems that solve real-world problems.</p>
     <div>
-      <a href="https://www.github.com/ashishfreaksout" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/ashish-160124126" target="_blank">LinkedIn</a>
-      <a href="Ashish_resume.pdf" target="_blank">Resume</a>
+      <a href="#">GitHub</a>
+      <a href="https://www.linkedin.com/in/ashish-160124126/" target="_blank">LinkedIn</a>
+      <a href="Ashish_Resume.pdf" target="_blank">Resume</a>
     </div>
   </div>
 
- <div class="project">
-  <h3>ATS Resume Filter System</h3>
-  <p>
-    This project analyzes resumes using Natural Language Processing (NLP) to detect key patterns and predict selection outcomes based on keyword relevance. Built as a collaborative effort, the system leverages Python for NLP and Tableau for visualization. It evaluates how certain keywords affect a candidate’s chances of getting selected, helping recruiters filter resumes more efficiently and fairly.
-  </p>
-  <a class="badge" href="https://github.com/ashishfreaksout1/ats-resume-filter" target="_blank">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg" alt="GitHub logo" width="16" height="16" style="vertical-align: middle; margin-right: 6px;">
-    View on GitHub
-  </a>
-</div>
+  <div class="main">
+    <h2>Portfolio</h2>
 
     <div class="project">
-      <h3>🚧 Project 2</h3>
+      <h3>ATS Resume Filter System</h3>
+      <p>
+        This project analyzes resumes using Natural Language Processing (NLP) to detect key patterns and predict selection outcomes based on keyword relevance. Built as a collaborative effort, the system leverages Python for NLP and Tableau for visualization. It evaluates how certain keywords affect a candidate’s chances of getting selected, helping recruiters filter resumes more efficiently and fairly.
+      </p>
+      <a class="badge" href="https://github.com/ashishfreaksout1/ats-resume-filter" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg" alt="GitHub logo" width="16" height="16">
+        View on GitHub
+      </a>
+    </div>
+
+    <div class="project">
+      <h3>Project 2</h3>
       <p>Coming soon...</p>
     </div>
 
     <div class="project">
-      <h3>🚧 Project 3</h3>
+      <h3>Project 3</h3>
       <p>Coming soon...</p>
     </div>
-
 
     <footer>
       <p>© 2025 Ashish</p>
