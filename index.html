@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ashish | Data Science Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -12,22 +13,21 @@
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Inter', sans-serif;
       display: flex;
-      min-height: 100vh;
+      background-color: #f5f7fa;
       color: #333;
-      background-color: #f9f9f9;
     }
 
     .sidebar {
       width: 300px;
-      background: #fff;
+      background-color: #ffffff;
       padding: 40px 20px;
-      border-right: 1px solid #eee;
-      text-align: center;
-      position: fixed;
+      border-right: 1px solid #e0e0e0;
       height: 100vh;
+      position: fixed;
       overflow-y: auto;
+      text-align: center;
     }
 
     .sidebar img {
@@ -36,11 +36,12 @@
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #007bff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     .sidebar h1 {
       font-size: 24px;
-      margin: 20px 0 10px;
+      margin: 20px 0 8px;
       color: #007bff;
     }
 
@@ -48,39 +49,56 @@
       font-size: 14px;
       color: #666;
       margin-bottom: 20px;
+      line-height: 1.6;
     }
 
     .sidebar a {
-      margin: 0 8px;
+      display: inline-block;
+      margin: 8px 6px;
       color: #007bff;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
       font-size: 14px;
     }
 
     .main {
       margin-left: 300px;
-      padding: 40px;
+      padding: 50px 40px;
       flex: 1;
       overflow-y: auto;
     }
 
     .main h2 {
-      font-size: 22px;
-      color: #007bff;
-      margin-bottom: 20px;
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 30px;
+      font-weight: 600;
     }
 
     .project {
       background: #fff;
-      padding: 20px;
+      padding: 25px;
       margin-bottom: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
     .project h3 {
-      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #222;
+    }
+
+    .project p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
     }
 
     footer {
@@ -101,7 +119,7 @@
 
       .main {
         margin-left: 0;
-        padding: 20px;
+        padding: 30px 20px;
       }
     }
   </style>
@@ -113,8 +131,8 @@
     <h1>Ashish</h1>
     <p>Data Science enthusiast with a strong foundation in statistics, NLP, and AI. Passionate about building ethical and intelligent systems that solve real-world problems.</p>
     <div>
-      <a href="#">GitHub</a> |
-      <a href="#">LinkedIn</a> |
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
       <a href="#">Resume</a>
     </div>
   </div>
